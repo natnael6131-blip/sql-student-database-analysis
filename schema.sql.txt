@@ -1,0 +1,13 @@
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    major VARCHAR(50),
+    gpa DECIMAL(3,2)
+);
+
+INSERT INTO students (id, name, major, gpa) VALUES
+(1, 'John', 'Computer Science', 3.8),
+(2, 'Sara', 'Mathematics', 3.6),
+(3, 'David', 'Engineering', 3.9),
+(4, 'Emily', 'Computer Science', 3.7),
+(5, 'Michael', 'Business', 3.4);

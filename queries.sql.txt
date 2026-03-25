@@ -1,0 +1,20 @@
+-- View all students
+SELECT * FROM students;
+
+-- Students with GPA above 3.5
+SELECT * FROM students
+WHERE gpa > 3.5;
+
+-- Average GPA by major
+SELECT major, AVG(gpa) AS avg_gpa
+FROM students
+GROUP BY major;
+
+-- Sort students by GPA (highest first)
+SELECT * FROM students
+ORDER BY gpa DESC;
+
+-- Count students per major
+SELECT major, COUNT(*) AS total_students
+FROM students
+GROUP BY major;
